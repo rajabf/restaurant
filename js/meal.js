@@ -7,7 +7,8 @@ function renderMeals(meals) {
 
     meals.forEach(meal => {
         const params = new URLSearchParams({ meal: meal.strCategory})
-        const url = `https://mealsbyrajab.netlify.app/?${params}`
+        // const url = `https://mealsbyrajab.netlify.app/?${params}`
+        const url = `https://mealsbyrajab.netlify.app/meal.html?${params}`
 
         let li = document.createElement('li')
         li.setAttribute('class','list-group-item col-sm-12 col-lg-4 card')
